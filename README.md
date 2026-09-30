@@ -160,7 +160,7 @@ curl -s http://localhost:4000/cms/pages/slots
 
 ## Time
 
-Stop at **3 hours**. Unfinished work is fine. Tell us what is missing and how you would do it.
+You have **3 days** from the day you get this brief. Unfinished work is fine. Tell us what is missing and how you would do it.
 
 ## AI tools
 
