@@ -1,0 +1,27 @@
+type Game {
+  id: ID!
+  name: String!
+  slug: String!
+  provider: Provider
+  thumbnail: String
+  width: Int!
+  height: Int!
+  rtp: Float
+  volatility: String!
+}
+
+type Provider {
+  id: ID!
+  name: String!
+}
+
+type GamePage {
+  items: [Game!]!
+  total: Int!
+  nextOffset: Int
+}
+
+type Query {
+  games(category: String!, provider: ID, offset: Int = 0, limit: Int = 12): GamePage!
+  providers(category: String!): [Provider!]!
+}
